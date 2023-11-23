@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontFamily);
+}
+
+:root {
+    --fontFamily: 'Poppins', sans-serif;
+    --backGroundColor: #0C356A;
+    --borderColor: #fff;
+    --listBackground: tomato;
+    --color: #fff;
+}
+
+body {
+    background-color: var(--backGroundColor);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.left, .right {
+    width: 300px;
+    height: 300px;
+    border: 1px dashed var(--borderColor);
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--color);
+}
+
+.list {
+    background: var(--listBackground);
+    margin-bottom: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    background: tomato;
+    margin-bottom: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.list svg {
+    font-size: 25px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.list span {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.list:hover {
+    cursor: grab;
+}
